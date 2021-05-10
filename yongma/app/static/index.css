@@ -1,0 +1,150 @@
+#top-picture {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  color: white;
+  margin-bottom: 60px;
+}
+
+#top-picture > h1 {
+  width: 1180px;
+  font-size: 50px;
+}
+#top-picture > h2 {
+  width: 1180px;
+  font-size: 30px;
+  font-weight: lighter;
+}
+#little-box {
+  width: 1180px;
+}
+
+#little-box > div {
+  width: 42px;
+  height: 9px;
+  background-color: white;
+}
+
+#bottom {
+  width: 100%;
+  align-items: center;
+}
+
+.posts {
+  width: 1180px;
+  margin-bottom: 60px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #707070;
+  padding: 22px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.posts-box {
+  width: 48%;
+  height: 250px;
+}
+
+.posts-box-top {
+  padding: 0px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.categories {
+  width: 100%;
+  border: 3px;
+  border-style: none none solid none;
+  border-color: #296bb1;
+}
+.categories-first {
+  border: 3px;
+  border-style: solid;
+  width: 144px;
+  height: 44px;
+  border-color: #296bb1 #296bb1 white #296bb1;
+  justify-content: center;
+  align-items: center;
+  top: -44px;
+}
+
+.categories-second {
+  border: 3px;
+  border-style: solid solid none solid;
+  width: 144px;
+  height: 44px;
+  background-color: #fcfcfc;
+  border-color: #cacaca;
+  justify-content: center;
+  align-items: center;
+}
+
+.cetegories-last::marker {
+  display: none;
+}
+.categories-plus {
+}
+
+.categories > div > p {
+  font-weight: bold;
+  font-size: 20px;
+  color: #434343;
+}
+
+.quick-menus {
+  width: 1180px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.quick-menus > a {
+  width: 19%;
+  text-decoration: none;
+}
+.quick-menu {
+  width: 100%;
+  height: 220px;
+  justify-content: center;
+  align-items: center;
+}
+
+.quick-menu > p {
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  font-weight: bolder;
+}
+.quick-menu-plus {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-weight: bolder;
+  font-size: 30px;
+  width: 40px;
+  height: 40px;
+  right: 0px;
+  top: 0px;
+  justify-content: center;
+  align-items: center;
+}
+#first.quick-menu {
+  background-color: #0a49cf;
+}
+#second.quick-menu {
+  background-color: #006ab7;
+}
+#third.quick-menu {
+  background-color: #0ab0cf;
+}
+#fourth.quick-menu {
+  background-color: #0ac4ae;
+}
+#fifth.quick-menu {
+  background-color: #bebebe;
+}

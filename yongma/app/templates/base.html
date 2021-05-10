@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'base.css' %}" />
+    {% block css %}
+    <!-- 자식 템플릿 상속 -->
+    {% endblock %}
+    <title>YONGMA HOLDINGS</title>
+  </head>
+  <body>
+    <div id="container" class="col">
+      <div id="header" class="row">
+        <div id="header-div" class="row">
+          <div id="left-logo">YONGMA<br />HOLDINGS</div>
+          <div id="right-menu" class="row">
+            <a href="introduction/ceoGreeting" class="menu-category"
+              >회사소개</a
+            >
+            <a href="businessArea/sales" class="menu-category">사업분야</a>
+            <a href="portfolio/residential" class="menu-category">사업실적</a>
+            <a href="community/newsRoom" class="menu-category">커뮤니티</a>
+            <a href="recruiting/philosophy" class="menu-category">채용안내</a>
+          </div>
+        </div>
+      </div>
+      {% block container %}
+      <!-- containers -->
+      {% endblock container %}
+
+      <div id="footer" class="row">
+        <div id="footer-div" class="row">
+          <div class="footer-left">YONGMA<br />HOLDINGS</div>
+          <div class="footer-right">
+            <div>
+              <span class="bold">주식회사 용마홀딩스</span><br />
+              대표: 강줄기 | 사업자번호: 556 - 81 - 005693<br />
+              <br />
+              TEL: 02 - 6052 - 1459 <br />
+              EMAIL: yonmga.holdings.ceo@gmail.com <br />
+              서울본사: 서울특별시 강남구 영동대로 647, 청담푸르지오시티 1909호
+              <br />
+              부산지사: 부산광역시 중구 대청로 18, 경남중고 총동창회관 403호
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

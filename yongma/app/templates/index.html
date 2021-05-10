@@ -1,0 +1,78 @@
+{% extends 'base.html' %} {% block css %} {% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'index.css' %}" />
+{% endblock%} {% block container %}
+<div id="index-page">
+  <div id="top-picture" class="col">
+    <h1>귀사의 비지니스에<br />최고의 파트너가 되겠습니다.</h1>
+    <div id="little-box">
+      <div></div>
+    </div>
+    <h2>블라블라블라블라블라블라블라<br />블라블라블라블라</h2>
+  </div>
+  <div id="bottom" class="col">
+    <div class="posts row">
+      <div class="posts-box">
+        <ul class="posts-box-top">
+          <li class="categories-first row"><p>사업실적</p></li>
+          <li class="cetegories-last">+</li>
+        </ul>
+        <div class="posts-box-bottom">
+          <div>[분양대행] 히히히 헤헤헤 헤헤헤</div>
+        </div>
+      </div>
+      <div class="posts-box">
+        <ul class="posts-box-top row">
+          <li class="categories-first row"><p>사업실적</p></li>
+          <li class="categories-second row"><p>보도자료</p></li>
+          <li class="cetegories-last">+</li>
+        </ul>
+        <div class="posts-box-bottom">
+          <div>[분양대행] 히히히 헤헤헤 헤헤헤</div>
+        </div>
+      </div>
+    </div>
+    <div class="quick-menus row">
+      <a href="introduction/ceoGreeting/" class="relative">
+        <div class="quick-menu-plus absolute row">
+          <p>+</p>
+        </div>
+        <div id="first" class="quick-menu row">
+          <p>회사소개</p>
+        </div>
+      </a>
+      <a href="https://www.naver.com" class="relative">
+        <div class="quick-menu-plus absolute row">
+          <p>+</p>
+        </div>
+        <div id="second" class="quick-menu row">
+          <p>사업분야</p>
+        </div>
+      </a>
+      <a href="https://www.naver.com" class="relative">
+        <div class="quick-menu-plus absolute row">
+          <p>+</p>
+        </div>
+        <div id="third" class="quick-menu row">
+          <p>사업실적</p>
+        </div>
+      </a>
+      <a href="https://www.naver.com" class="relative">
+        <div class="quick-menu-plus absolute row">
+          <p>+</p>
+        </div>
+        <div id="fourth" class="quick-menu row">
+          <p>커뮤니티</p>
+        </div>
+      </a>
+      <a href="https://www.naver.com" class="relative">
+        <div class="quick-menu-plus absolute row">
+          <p>+</p>
+        </div>
+        <div id="fifth" class="quick-menu row">
+          <p>채용안내</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+{% endblock %}

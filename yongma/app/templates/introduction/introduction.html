@@ -1,0 +1,35 @@
+{% extends 'sidenav.html' %}
+
+<!-- CSS 상속 -->
+{% block sectionsCss %}
+<!-- introduction.css -->
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'introduction.css' %}" />
+{% endblock%}
+
+<!-- 사이드 바 -->
+{% block navBar %}
+<div class="page-name"><p>회사소개</p></div>
+<div class="section selected"><p>CEO 인사말</p></div>
+<div class="section"><p>기업이념</p></div>
+<div class="section"><p>조직도</p></div>
+<div class="section"><p>지명원</p></div>
+<div class="section"><p>오시는 길</p></div>
+{% endblock %}
+
+<!-- 섹션타이틀 -->
+{% block sectionTitle %}
+<h1 class="section-name">CEO 인사말</h1>
+<h2 class="section-introduce">언제나 어쩌구저쩌굴</h2>
+<h2 class="section-path">HOME > 회사소개 > CEO 인사말</h2>
+{% endblock%}
+
+<!-- Container  -->
+{% block sectionContainer %}
+<div>
+  {% block Content %}
+  <!-- 섹션별 -->
+  {% endblock %}
+</div>
+
+{% endblock %}
