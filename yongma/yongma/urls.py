@@ -19,15 +19,9 @@ from app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", views.index, name="index"),  # 인덱스 페이지
-    path("introduction/<str:section>/", views.introduction,
-         name="introduction"),  # 회사소개 페이지 (5)
-    path("businessArea/<str:section>/", views.businessArea,
-         name="businessArea"),  # 사업분야 페이지 (4)
-    path("portfolio/<str:section>/", views.portfolio,
-         name="portfolio"),  # 사업실적 페이지 (2)
-    path("community/<str:section>/", views.community,
-         name="community"),  # 커뮤니티 페이지 (3)
-    path("recruiting/<str:section>/", views.recruiting,
-         name="recruiting"),  # 채용안내 페이지 (2)
+    path("", views.index, name="index"),
+    path("<str:category>/<str:section>/", views.section,
+         name="section"),
+    path("<str:category>/<str:section>/<int:post_pk>",
+         views.post_view, name="section"),
 ]

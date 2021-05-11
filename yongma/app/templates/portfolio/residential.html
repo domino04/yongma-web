@@ -1,0 +1,36 @@
+{% extends 'sidenav.html' %}
+
+<!-- CSS 상속 -->
+{% block sectionsCss %}
+<!-- introduction.css -->
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'introduction.css' %}" />
+{% endblock%}
+
+<!-- 사이드 바 -->
+{% block navBar %}
+<div class="page-name"><p>사업실적</p></div>
+<a href="/portfolio/residential" class="section selected"><p>주거 부문</p></a>
+<a href="/portfolio/noneResidential" class="section"><p>비주거 부문</p></a>
+{% endblock %}
+
+<!-- 섹션타이틀 -->
+{% block sectionTitle %}
+<h1 class="section-name">주거 부문</h1>
+<h2 class="section-introduce">주거 부문 용마홀딩스의 사업실적입니다.</h2>
+<h2 class="section-path">HOME > 사업실적 > 주거 부문</h2>
+{% endblock%}
+
+<!-- Container  -->
+{% block sectionContainer %}
+<div class="announcement col">
+  <div class="circle col"><h1>!</h1></div>
+</div>
+<div class="not-ready col">
+  <h2>현재 페이지는 준비중입니다.</h2>
+  <p>
+    빠른 시일내에 서비스를 제공할 수 있도록 노력하겠습니다.<br />감사합니다.
+  </p>
+</div>
+
+{% endblock %}

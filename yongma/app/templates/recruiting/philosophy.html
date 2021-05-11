@@ -1,0 +1,38 @@
+{% extends 'sidenav.html' %}
+
+<!-- CSS 상속 -->
+{% block sectionsCss %}
+<!-- introduction.css -->
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'introduction.css' %}" />
+{% endblock%}
+
+<!-- 사이드 바 -->
+{% block navBar %}
+<div class="page-name"><p>채용안내</p></div>
+<a href="/recruiting/philosophy" class="section selected"><p>인재상</p></a>
+<a href="/recruiting/announcement" class="section"><p>채용공고</p></a>
+{% endblock %}
+
+<!-- 섹션타이틀 -->
+{% block sectionTitle %}
+<h1 class="section-name">인재상</h1>
+<h2 class="section-introduce">당사가 선호하는 인재상을 소개합니다.</h2>
+<h2 class="section-path">HOME > 채용안내 > 인재상</h2>
+{% endblock%}
+
+<!-- Container  -->
+{% block sectionContainer %}
+<img
+  class="philosophyImg"
+  src="https://postfiles.pstatic.net/MjAyMTA1MTJfMTQy/MDAxNjIwNzYwNDYzMDk3.XRhR5Jj5mDi5ByIridFlcToy1mgQ3z1970IV41TYlB8g.nCzdnSFX8sJTMriW7uXfIG7AK5M__3oV6Ff-1K-z3fwg.PNG.tojay24/philosophy.png?type=w966"
+/>
+<p class="vision-p">
+  -창조적인 생각: 늘 깨어있는 사고로 새로운 아이디어를 활용하는 인재 <br />
+  -적극적인 자세: 실패와 배움에 두려움 없는 적극적인 인재<br />
+  -강인한 추진력: 강한 투지로 계속해서 도전하는 인재
+</p>
+<p class="vision-p">
+  회사 구성원과 함께 성장하는 것이 용마홀딩스가 추구하는 바입니다.
+</p>
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends 'sidenav.html' %}
+
+<!-- CSS 상속 -->
+{% block sectionsCss %}
+<!-- introduction.css -->
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'introduction.css' %}" />
+{% endblock%}
+
+<!-- 사이드 바 -->
+{% block navBar %}
+<div class="page-name"><p>채용안내</p></div>
+<a href="/recruiting/philosophy" class="section"><p>인재상</p></a>
+<a href="/recruiting/announcement" class="section selected"><p>채용공고</p></a>
+{% endblock %}
+
+<!-- 섹션타이틀 -->
+{% block sectionTitle %}
+<h1 class="section-name">채용공고</h1>
+<h2 class="section-introduce">채용은 수시채용을 원칙으로 합니다.</h2>
+<h2 class="section-path">HOME > 채용안내 > 인재상</h2>
+{% endblock%}
+
+<!-- Container  -->
+{% block sectionContainer %}
+<div class="announcement col">
+  <div class="circle col"><h1>!</h1></div>
+  <p>현재 당사에서 진행 중인 채용 공고가 없습니다.</p>
+</div>
+
+{% endblock %}

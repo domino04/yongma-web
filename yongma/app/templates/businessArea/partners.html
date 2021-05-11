@@ -1,0 +1,144 @@
+{% extends 'sidenav.html' %}
+
+<!-- CSS 상속 -->
+{% block sectionsCss %}
+<!-- introduction.css -->
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'introduction.css' %}" />
+{% endblock%}
+
+<!-- 사이드 바 -->
+{% block navBar %}
+<div class="page-name"><p>사업분야</p></div>
+<a href="/businessArea/sales" class="section"><p>분양대행</p></a>
+<a href="/businessArea/development" class="section"><p>부동산 개발/시행</p></a>
+<a href="/businessArea/consulting" class="section"><p>부동산 컨설팅</p></a>
+<a href="/businessArea/partners" class="section selected"><p>파트너사</p></a>
+{% endblock %}
+
+<!-- 섹션타이틀 -->
+{% block sectionTitle %}
+<h1 class="section-name">파트너사</h1>
+<h2 class="section-introduce">
+  용마홀딩스는 고객에게 신뢰와 감동으로 보답합니다.
+</h2>
+<h2 class="section-path">HOME > 사업분야 > 파트너사</h2>
+{% endblock%}
+
+<!-- Container  -->
+{% block sectionContainer %}
+
+<div class="partners row">
+  <div class="a-partner col">
+    <div class="a-partner-pic">
+      <img
+        class="partner-logo"
+        src="https://postfiles.pstatic.net/MjAyMTA1MTJfNiAg/MDAxNjIwNzYyNzQzMTEw.44JsNr54qVDVHX6EJatrPRxoShfhAlChvR8FeRHs-o8g.kdIm3y_-Ifup52z2RHhIZE4ulMs8FfyaGMCROrPBOoAg.PNG.tojay24/%EB%A1%AF%EB%8D%B0%EA%B1%B4%EC%84%A4.png?type=w966"
+      />
+    </div>
+    <div class="a-partner-name"><p>롯데건설</p></div>
+  </div>
+  <div class="a-partner col">
+    <div class="a-partner-pic">
+      <img
+        class="partner-logo"
+        src="https://postfiles.pstatic.net/MjAyMTA1MTJfMjQy/MDAxNjIwNzYyNzQzNDA1.OMcEN8J0-dN3hgNaftWVTnE9XLeWVh9uxT7b-E1wWosg.QBWhBgZpJ7NfvYAGuowXenuCtiux_X3Z4sn_BXeMi0Ug.JPEG.tojay24/%ED%98%84%EB%8C%80%EA%B1%B4%EC%84%A4.jpeg?type=w966"
+      />
+    </div>
+    <div class="a-partner-name"><p>현대건설</p></div>
+  </div>
+  <div class="a-partner col">
+    <div class="a-partner-pic">
+      <img
+        class="partner-logo"
+        src="https://postfiles.pstatic.net/MjAyMTA1MTJfMTEw/MDAxNjIwNzYyNzQzMDQx.EKYK6dA0EGaCQ9MFKivKzb1w2VibGVgHQS7bsZ0Kficg.0JG8-G4PFO-iTtwTFVxNks60iVck7h4saTzBDkHyv_kg.JPEG.tojay24/%EA%B2%BD%EB%8F%99%EA%B1%B4%EC%84%A4.jpeg?type=w966"
+      />
+    </div>
+    <div class="a-partner-name"><p>경동건설</p></div>
+  </div>
+  <div class="a-partner col">
+    <div class="a-partner-pic">
+      <img
+        class="partner-logo"
+        src="https://postfiles.pstatic.net/MjAyMTA1MTJfMjgg/MDAxNjIwNzYyNzQyNzc5.01UeGdSzCXglkuWKpoNMeoBk9pm-iFM6gVwgf3Mmo_cg.rNS2tOy9zMijcc-xGF77YCoUuy-B_Un4C_jGSc0FJDgg.JPEG.tojay24/%ED%95%9C%EC%8B%A0%EA%B3%B5%EC%98%81.jpeg?type=w966"
+      />
+    </div>
+    <div class="a-partner-name"><p>한신공영</p></div>
+  </div>
+  <div class="a-partner col">
+    <div class="a-partner-pic">
+      <img
+        class="partner-logo"
+        src="https://postfiles.pstatic.net/MjAyMTA1MTJfNTMg/MDAxNjIwNzYyNzQzMDIz.2ubPWUhNyH1GTv64W0-u1ZTjGGFaGmzGsiibARWgeDEg.sGgZblhJdy08CD-uRPy6R44W1PkkWV6GPZO3Ib_9C-kg.PNG.tojay24/%EC%8B%A0%ED%83%9C%EC%96%91%EA%B1%B4%EC%84%A4.png?type=w966"
+      />
+    </div>
+    <div class="a-partner-name"><p>신태양건설</p></div>
+  </div>
+  <div class="a-partner col">
+    <div class="a-partner-pic">
+      <img
+        class="partner-logo"
+        src="https://postfiles.pstatic.net/MjAyMTA1MTJfMjY5/MDAxNjIwNzYyNzQyOTYw.YiArh6qvUCro3CuVpqgopzuMdB2nbU2zVNqc8-QOrcQg.n_OCLuhVOR_PMTvqd_9lC8JYP8R99lzYQw1cb-w0iRsg.GIF.tojay24/%EB%8C%80%EC%A0%80%EA%B1%B4%EC%84%A4.gif?type=w966"
+      />
+    </div>
+    <div class="a-partner-name"><p>대저건설</p></div>
+  </div>
+  <div class="a-partner col">
+    <div class="a-partner-pic">
+      <img
+        class="partner-logo"
+        src="https://postfiles.pstatic.net/MjAyMTA1MTJfMTQx/MDAxNjIwNzYyNzQyNzc5.cMmy8CjOShdoTVK0LgszdvkVSvYAYNDU0EPg_1bHTMMg.-Gn6by7PpsBtYXskpipNr5GmMiIs9YwayqlAzzhJM-kg.JPEG.tojay24/%EC%9D%BC%EC%8B%A0%EA%B1%B4%EC%84%A4.jpeg?type=w966"
+      />
+    </div>
+    <div class="a-partner-name">
+      <p class="smaller">일신설계종합건축사무소</p>
+    </div>
+  </div>
+  <div class="a-partner col">
+    <div class="a-partner-pic">
+      <img
+        class="partner-logo-ar"
+        src="https://static.wixstatic.com/media/9964ce_fdd421a9865e43419a4f2523c0ebdd5d~mv2.png/v1/fill/w_80,h_80,al_c,q_95/Archium_CI(with%20name).webp"
+      />
+    </div>
+    <div class="a-partner-name"><p class="smaller">건축사무소 아르키움</p></div>
+  </div>
+  <div class="a-partner col">
+    <div class="a-partner-pic">
+      <img
+        class="partner-logo"
+        src="https://postfiles.pstatic.net/MjAyMTA1MTJfMTMx/MDAxNjIwNzYyNzQyNzc0.3Pncwf2Cnws4JTvf-BL_r8kf7hCBgVstFBXRarLjRhwg.MNxu7BoFMoJbauoi5t1e0OAnCR_wjOy2cil7D6enDcog.PNG.tojay24/%ED%95%98%EB%82%98%EA%B8%88%EC%9C%B5%EA%B7%B8%EB%A3%B9.png?type=w966"
+      />
+    </div>
+    <div class="a-partner-name"><p>하나금융그룹</p></div>
+  </div>
+  <div class="a-partner col">
+    <div class="a-partner-pic">
+      <img
+        class="partner-logo"
+        src="https://postfiles.pstatic.net/MjAyMTA1MTJfOTQg/MDAxNjIwNzYyNzQyNzcz.pNHPqTVLTVCQs3QRb-StHVHTigNhefDPW6yUraeAr4kg.6MABUa_OPq-8Q2ih2AWFUvoT7afxQYW-VRKDott8c8Qg.JPEG.tojay24/%ED%95%98%EB%82%98%EC%9E%90%EC%82%B0%EC%8B%A0%ED%83%81.jpeg?type=w966"
+      />
+    </div>
+    <div class="a-partner-name"><p>하나자산신탁</p></div>
+  </div>
+  <div class="a-partner col">
+    <div class="a-partner-pic">
+      <img
+        class="partner-logo"
+        src="https://postfiles.pstatic.net/MjAyMTA1MTJfMTE5/MDAxNjIwNzYyNzQyNzk5.HWlYI-QhUUEwMZUOGwM9MRhmsLIMPc8F2UdEyeVtbb0g.eu8gx1G23ZNppMhTLXO6sWnvlkVVSSOMvVX8TVWJmWYg.PNG.tojay24/%EB%B6%80%EC%82%B0%EB%8F%84%EC%8B%9C%EA%B3%B5%EC%82%AC.png?type=w966"
+      />
+    </div>
+    <div class="a-partner-name"><p>부산도시공사</p></div>
+  </div>
+  <div class="a-partner col">
+    <div class="a-partner-pic">
+      <img
+        class="partner-logo"
+        src="https://postfiles.pstatic.net/MjAyMTA1MTJfMjU1/MDAxNjIwNzYyNzQyODIx.HL3N_P2OkEq3Q6NE8xvDsXfQWHwMkywZMY7mjDE7lbIg.HXJAbySO3V4Z8696PBfr60w3HQ0AyMIMfjmHXC0r-0gg.JPEG.tojay24/%ED%8F%89%ED%83%9D%EB%8F%84%EC%8B%9C%EA%B3%B5%EC%82%AC.jpeg?type=w966"
+      />
+    </div>
+    <div class="a-partner-name"><p>평택도시공사</p></div>
+  </div>
+</div>
+
+{% endblock %}

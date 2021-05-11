@@ -12,22 +12,35 @@
   <div id="bottom" class="col">
     <div class="posts row">
       <div class="posts-box">
-        <ul class="posts-box-top">
-          <li class="categories-first row"><p>사업실적</p></li>
-          <li class="cetegories-last">+</li>
-        </ul>
-        <div class="posts-box-bottom">
-          <div>[분양대행] 히히히 헤헤헤 헤헤헤</div>
+        <div class="posts-box-top row">
+          <div class="category col"><p>뉴스룸</p></div>
+          <div class="plus col"><a href="community/newsRoom">+</a></div>
+        </div>
+        <div class="posts-box-bottom col">
+          {% for new in news %}
+          <div class="a-post row">
+            <div class="a-post-title">
+              <a href="community/newsRoom/{{new.pk}}">{{new.title}}</a>
+            </div>
+            <div class="a-post-created-at">{{new.created_at.date}}</div>
+          </div>
+          {% endfor %}
         </div>
       </div>
       <div class="posts-box">
-        <ul class="posts-box-top row">
-          <li class="categories-first row"><p>사업실적</p></li>
-          <li class="categories-second row"><p>보도자료</p></li>
-          <li class="cetegories-last">+</li>
-        </ul>
-        <div class="posts-box-bottom">
-          <div>[분양대행] 히히히 헤헤헤 헤헤헤</div>
+        <div class="posts-box-top row">
+          <div class="category col"><p>보도자료</p></div>
+          <div class="plus col"><a href="community/press">+</a></div>
+        </div>
+        <div class="posts-box-bottom col">
+          {% for press in presss %}
+          <div class="a-post row">
+            <div class="a-post-title">
+              <a href="{{press.link}}">{{press.title}}</a>
+            </div>
+            <div class="a-post-created-at">{{press.created_at.date}}</div>
+          </div>
+          {% endfor %}
         </div>
       </div>
     </div>

@@ -5,25 +5,27 @@
 {% endblock %} {% block container %}
 <div id="side-nav col">
   <div class="top-picture"></div>
-  <div class="page-container row">
-    <div class="nav-bar-div relative">
-      <div class="nav-bar absolute col">
-        {% block navBar %}
-        <!-- 사이드 바 내용 -->
-        {% endblock %}
+  <div class="page-container-div">
+    <div class="page-container row">
+      <div class="nav-bar-div relative">
+        <div class="nav-bar absolute col">
+          {% block navBar %}
+          <!-- 사이드 바 내용 -->
+          {% endblock %}
+        </div>
       </div>
-    </div>
 
-    <div class="section-content">
-      <div class="title col">
-        {% block sectionTitle %}
-        <!-- 섹션 타이틀 -->
-        {% endblock %}
-      </div>
-      <div class="section-container">
-        {% block sectionContainer %}
-        <!-- containers -->
-        {% endblock sectionContainer %}
+      <div class="section-content">
+        <div class="title col">
+          {% block sectionTitle %}
+          <!-- 섹션 타이틀 -->
+          {% endblock %}
+        </div>
+        <div class="section-container">
+          {% block sectionContainer %}
+          <!-- containers -->
+          {% endblock %}
+        </div>
       </div>
     </div>
   </div>

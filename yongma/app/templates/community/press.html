@@ -1,0 +1,48 @@
+{% extends 'sidenav.html' %}
+
+<!-- CSS 상속 -->
+{% block sectionsCss %}
+<!-- introduction.css -->
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'introduction.css' %}" />
+{% endblock%}
+
+<!-- 사이드 바 -->
+{% block navBar %}
+<div class="page-name"><p>커뮤니티</p></div>
+<a href="/community/newsRoom" class="section"><p>뉴스룸</p></a>
+<a href="/community/press" class="section selected"><p>보도자료</p></a>
+<a href="/community/contact" class="section"><p>Contact</p></a>
+{% endblock %}
+
+<!-- 섹션타이틀 -->
+{% block sectionTitle %}
+<h1 class="section-name">보도자료</h1>
+<h2 class="section-introduce">관련 최신 보도자료를 전달합니다.</h2>
+<h2 class="section-path">HOME > 커뮤니티 > 보도자료</h2>
+{% endblock%}
+
+<!-- Container  -->
+{% block sectionContainer %}
+
+<table class="newsroom-table">
+  <thead>
+    <tr>
+      <th class="number">번호</th>
+      <th class="title">제목</th>
+      <th class="title">출처</th>
+      <th class="created-at">등록일</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for press in presss %}
+    <tr>
+      <td class="number">{{press.id}}</td>
+      <td class="title"><a href="{{press.link}}">{{press.title}}</a></td>
+      <td class="title">{{press.company}}</td>
+      <td class="created-at">{{press.created_at.date}}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

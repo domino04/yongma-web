@@ -1,0 +1,52 @@
+{% extends 'sidenav.html' %}
+
+<!-- CSS 상속 -->
+{% block sectionsCss %}
+<!-- introduction.css -->
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'introduction.css' %}" />
+{% endblock%}
+
+<!-- 사이드 바 -->
+{% block navBar %}
+<div class="page-name"><p>회사소개</p></div>
+<a href="/introduction/ceoGreeting" class="section"><p>CEO 인사말</p></a>
+<a href="/introduction/vision" class="section"><p>기업이념</p></a>
+<a href="/introduction/organization" class="section"><p>조직도</p></a>
+<a href="/introduction/brochure" class="section selected"><p>지명원</p></a>
+<a href="/introduction/map" class="section"><p>오시는 길</p></a>
+{% endblock %}
+
+<!-- 섹션타이틀 -->
+{% block sectionTitle %}
+<h1 class="section-name">지명원</h1>
+<h2 class="section-introduce">
+  (주)용마홀딩스의 연혁과 개요가 담긴 지명원입니다.
+</h2>
+<h2 class="section-path">HOME > 회사소개 > 지명원</h2>
+{% endblock%}
+
+<!-- Container  -->
+{% block sectionContainer %}
+
+<div class="brochureImg-div col">
+  <img
+    class="brochureImg"
+    src="https://postfiles.pstatic.net/MjAyMTA1MTJfMzgg/MDAxNjIwNzYwNDYzMzc5.oxjNZBJ98aU8ioIHE_QhUWut4aSFKA1qxCvqkTcGJkMg.ICBQgy7BMLiY-bWeRwmrO_p2MlqddF7aGTVVNjEdDSEg.PNG.tojay24/brochure1.png?type=w966"
+  />
+</div>
+<p class="organization-p">
+  (주)용마홀딩스는 다양한 관련분야의 업무흐름을 종합적으로 서비스 함으로써
+  개발과정에 일관성을 유지하고, 신속하고 정확하게 프로젝트를 진행시킬 수 있는
+  맨파워와 시스템을 보유하고 있습니다.
+</p>
+<div class="brochureImg-div col">
+  <a
+    class="download-btn col"
+    href="https://bigfile.mail.naver.com/bigfileupload/download?fid=plYZD6J8WXtXFAKjK3YdFAUXHqUmKoumFxuwKAu9KAgmHqurKoKqKqbwaxvjMqbXax+oK4KZM4UdKxJ4M6MdK6E9KAbrK4ioFzKrKAb="
+    download="용마홀딩스 지명원(2021).pdf"
+    ><p>지명원 pdf 다운로드</p></a
+  >
+</div>
+
+{% endblock %}

@@ -1,0 +1,165 @@
+{% extends 'sidenav.html' %}
+
+<!-- CSS 상속 -->
+{% block sectionsCss %}
+<!-- introduction.css -->
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'introduction.css' %}" />
+{% endblock%}
+
+<!-- 사이드 바 -->
+{% block navBar %}
+<div class="page-name"><p>사업분야</p></div>
+<a href="/businessArea/sales" class="section selected"><p>분양대행</p></a>
+<a href="/businessArea/development" class="section"><p>부동산 개발/시행</p></a>
+<a href="/businessArea/consulting" class="section"><p>부동산 컨설팅</p></a>
+<a href="/businessArea/partners" class="section"><p>파트너사</p></a>
+{% endblock %}
+
+<!-- 섹션타이틀 -->
+{% block sectionTitle %}
+<h1 class="section-name">분양대행</h1>
+<h2 class="section-introduce">분양대행 업무 프로세스를 안내합니다.</h2>
+<h2 class="section-path">HOME > 사업분야 > 분양대행</h2>
+{% endblock%}
+
+<!-- Container  -->
+{% block sectionContainer %}
+
+<img
+  class="process-Img"
+  src="https://postfiles.pstatic.net/MjAyMTA1MTJfMTAw/MDAxNjIwNzYwNDYzMjA1.2OosPSpYFnWpT0w8xiM0Z5z59b6ljjjcl4myExOSSlYg.keSrXUqmaMcGPxJEJlKtWLaKqKFUePHy8mBoz1kNXlkg.PNG.tojay24/sales.png?type=w966"
+/>
+<table class="process-table">
+  <tbody>
+    <tr class="row1">
+      <td class="process-pic">
+        <img
+          class="process-img"
+          src="https://postfiles.pstatic.net/MjAyMTA1MTJfMTAw/MDAxNjIwNzYwNTAxMzk5.Mgv9LUooNPrSiJL0w5k_FscG1Sd6xgP_6-BtQZHgCWMg.WPzQKGd9aeqqB16t4Ql5-7xR-Aqf-fIv2DjMFJURHzMg.JPEG.tojay24/startup-3267505_1920.jpg?type=w966"
+        />
+      </td>
+      <td class="process-text">
+        <div class="process-step">STEP 1</div>
+        <h1>분양대행 의뢰</h1>
+        <h2>시장조사 어쩌구를 받습니다.</h2>
+        <p>
+          - 당사 방문 및 전화<br />
+          - 의뢰 접수<br />
+          - 대행사 참여 제안<br />
+          - 계약 체결
+        </p>
+      </td>
+    </tr>
+    <tr class="row2">
+      <td class="process-text">
+        <div class="process-step">STEP 2</div>
+        <h1>분양대행 업무 타당성 검토</h1>
+        <h2>시장조사 어쩌구를 받습니다.</h2>
+        <p>
+          - 시장조사<br />
+          - 사업성 분석<br />
+          - 설문조사 분석
+        </p>
+      </td>
+      <td class="process-pic">
+        <img
+          class="process-img"
+          src="https://postfiles.pstatic.net/MjAyMTA1MTJfMTQ4/MDAxNjIwNzYwNTAxNTc0.wiyHVR1PcQF2qQ09nOXhrDfNApLJjW4y9ScJMVmo5LEg.fD95mhUyW7tQXnPi4h8tmFzahkbrZSWyYpqpdZGM6Zsg.JPEG.tojay24/macbook-624707_1920.jpg?type=w966"
+        />
+      </td>
+    </tr>
+    <tr class="row3">
+      <td class="process-pic">
+        <img
+          class="process-img"
+          src="https://postfiles.pstatic.net/MjAyMTA1MTJfMTU1/MDAxNjIwNzYwNTAxNzkz.YTxBXtbFsESfpLTNp5SNodO-LMtNq5SpjjZCugzRTW4g.Bq23G2P0KoM2HwAkASlMzN37mTCLN6wx3euJFOtDx84g.JPEG.tojay24/digital-marketing-1725340_1920.jpg?type=w966"
+        />
+      </td>
+      <td class="process-text">
+        <div class="process-step">STEP 3</div>
+        <h1>시장조사</h1>
+        <h2>시장조사 어쩌구를 받습니다.</h2>
+        <p>
+          - 설문조사<br />
+          - 분양 RISK 분석
+        </p>
+      </td>
+    </tr>
+    <tr class="row4">
+      <td class="process-text">
+        <div class="process-step">STEP 4</div>
+        <h1>사업성 분석</h1>
+        <h2>시장조사 어쩌구를 받습니다.</h2>
+        <p>
+          - 시장 종합 분석<br />
+          - 사업성 분석
+        </p>
+      </td>
+      <td class="process-pic">
+        <img
+          class="process-img"
+          src="https://postfiles.pstatic.net/MjAyMTA1MTJfMTEz/MDAxNjIwNzYwNTAxNjU5.D8U187gWcJpFFk9hTkGups_qxfWhzUvp6oxeiQqcqZ8g.TbKAttAbPTPrGOk5FnDu9JL1FjGnk4KAMJ914gX8ZM8g.JPEG.tojay24/startup-849805_1920.jpg?type=w966"
+        />
+      </td>
+    </tr>
+    <tr class="row5">
+      <td class="process-pic">
+        <img
+          class="process-img"
+          src="https://postfiles.pstatic.net/MjAyMTA1MTJfMjE0/MDAxNjIwNzYwNTAxNzQy.jeHqCX2Jk-l8uzbH-5o13dXb7a5hsUo-MFXTtuxRb3cg.G7Gt4YReH9nYGeJbdNnr8wtlXHWjr8Wh0QY5B_TClfwg.JPEG.tojay24/paper-3213924_1920.jpg?type=w966"
+        />
+      </td>
+      <td class="process-text">
+        <div class="process-step">STEP 5</div>
+        <h1>분양전략 수립</h1>
+        <h2>시장조사 어쩌구를 받습니다.</h2>
+        <p>
+          - 핵심 수요 타겟 설정<br />
+          - 광고홍보 전략<br />
+          - 상품특화 전략<br />
+          - 분양영업 전략
+        </p>
+      </td>
+    </tr>
+    <tr class="row6">
+      <td class="process-text">
+        <div class="process-step">STEP 6</div>
+        <h1>마케팅전략 실행</h1>
+        <h2>시장조사 어쩌구를 받습니다.</h2>
+        <p>
+          - 프리마케팅 실행<br />
+          - 전문 위원 투입<br />
+          - 광고홍보 실행<br />
+          - 메인 마케팅 실행
+        </p>
+      </td>
+      <td class="process-pic">
+        <img
+          class="process-img"
+          src="https://postfiles.pstatic.net/MjAyMTA1MTJfMjEx/MDAxNjIwNzYwNTAxODk4.ug-CvvfnRzE3gFrS61fBPYfll2Scb_u-XpiJsgeSNYsg.ysOHk8uWh1XGPR4SilYdp4WeQW_rq078_O7d1XXNle8g.JPEG.tojay24/student-849825_1920.jpg?type=w966"
+        />
+      </td>
+    </tr>
+    <tr class="row7">
+      <td class="process-pic">
+        <img
+          class="process-img"
+          src="https://postfiles.pstatic.net/MjAyMTA1MTJfNiAg/MDAxNjIwNzYwNTAxOTM1.L_prIFkgGS-8Z0oa7bnr0m80552AgKNPrylZ4rSO6iIg.isgHXMqMp1khUiKWB-qsm_xayp8PGvFHsgmhZ_qF12sg.JPEG.tojay24/student-849822_1920.jpg?type=w966"
+        />
+      </td>
+      <td class="process-text">
+        <div class="process-step">STEP 7</div>
+        <h1>사후관리</h1>
+        <h2>시장조사 어쩌구를 받습니다.</h2>
+        <p>
+          - 입주관리<br />
+          - 입주예정자에 대한 민원처리 업무 서비스<br />
+          - 향후 마케팅 적합 타당성 보고
+        </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+{% endblock %}
