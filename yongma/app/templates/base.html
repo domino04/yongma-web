@@ -2,6 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'base.css' %}" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:title" content="용마홀딩스" />
     <meta property="og:image:width" content="400" />
@@ -9,8 +12,6 @@
     <meta property="og:image" content="{% static 'src/preview.png' %}" />
     <meta property="og:description" content="주식회사 용마홀딩스입니다." />
     <meta name="description" content="주식회사 용마홀딩스입니다." />
-    {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'base.css' %}" />
     {% block css %}
     <!-- 자식 템플릿 상속 -->
     {% endblock %}
