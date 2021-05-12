@@ -178,6 +178,10 @@
   margin-bottom: 70px;
   justify-content: space-between;
 }
+.career-box > .right-box > div > table > tbody > tr > td,
+.career-box > .left-box > table > tbody > tr > td {
+  font-size: 14px;
+}
 
 .left-box,
 .right-box > div {
@@ -195,13 +199,13 @@ tr > .left {
 }
 
 tr.first > td {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 tr.second > td,
 tr.third > td,
 tr.fourth > td {
-  font-size: 15px;
+  font-size: 14px;
   padding-top: 20px;
 }
 
@@ -336,7 +340,7 @@ tr.fourth > td {
 
 .process-step {
   width: 90px;
-  height: 20px;
+  height: 30px;
   background-color: #006ab7;
   color: white;
   font-weight: bold;
@@ -515,7 +519,9 @@ tr > .created-at {
   padding-left: 20px;
 }
 .news-post-table > tbody > tr > .title {
-  padding-bottom: 40px;
+  font-weight: normal;
+  padding-top: 40px;
+  padding-bottom: 60px;
 }
 .news-post-btn {
   margin-top: 40px;
