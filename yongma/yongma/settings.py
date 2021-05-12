@@ -28,6 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     '.amazonaws.com',
     '.elasticbeanstalk.com',
+    'yongma.eba-zwhmprj3.us-west-2.elasticbeanstalk.com'
 ]
 
 
