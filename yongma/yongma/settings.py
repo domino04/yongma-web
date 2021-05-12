@@ -26,10 +26,10 @@ SECRET_KEY = 'django-insecure-+p+^v-osm+a-x)abrcfmr*p$o9qvsr@o^sz=86_l1_m07dhpu*
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'localhost',
-    '.amazonaws.com',
-    '.elasticbeanstalk.com',
-    'yongma.eba-zwhmprj3.us-west-2.elasticbeanstalk.com'
+        '3.91.192.238',
+        'yongmaholdings.co.kr',
+        '.amazonaws.com',
+    'localhost'
 ]
 
 
