@@ -29,6 +29,7 @@ ALLOWED_HOSTS = [
         '3.91.192.238',
         'yongmaholdings.co.kr',
         '.amazonaws.com',
+    'localhost'
 ]
 
 

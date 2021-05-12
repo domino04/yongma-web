@@ -327,6 +327,7 @@ tr.fourth > td {
 
 .process-text > h2 {
   font-size: 20px;
+  display: none;
 }
 
 .process-text > p {
