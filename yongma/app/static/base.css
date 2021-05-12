@@ -67,7 +67,6 @@ span.bold {
 }
 #header {
   width: 100%;
-
   background-color: white;
   justify-content: center;
   padding-top: 20px;
@@ -126,4 +125,49 @@ span.bold {
 .footer-right {
   font-weight: lighter;
   line-height: 25px;
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    width: 100%;
+    min-width: 100px;
+    font-family: "Noto Sans KR", sans-serif;
+  }
+  #container,
+  #header,
+  #header-div {
+    width: 100%;
+    min-width: 100px;
+  }
+
+  #header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  #header-div > a {
+    width: 100%;
+    padding-left: 30px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  #right-menu {
+    display: none;
+  }
+
+  .footer,
+  .footer-div {
+    width: 100%;
+    flex-direction: column;
+  }
+  .footer-left {
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+  .footer-right {
+    font-size: 12px;
+  }
+  .footer-div {
+    padding: 50px;
+    box-sizing: border-box;
+  }
 }
