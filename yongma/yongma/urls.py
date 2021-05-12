@@ -24,4 +24,5 @@ urlpatterns = [
          name="section"),
     path("<str:category>/<str:section>/<int:post_pk>",
          views.post_view, name="section"),
+    path("login/", views.login, name="login"),
 ]

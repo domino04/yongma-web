@@ -44,3 +44,7 @@ def post_view(request, category, section, post_pk):
     if (category == 'community') and (section == "newsRoom"):
         post = New.objects.get(pk=post_pk)
         return render(request, f'{category}/news.html', {'post': post})
+
+
+def login(request):
+    return render(request, 'login.html')

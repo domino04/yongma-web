@@ -649,3 +649,70 @@ form.contact > .submit-div > button {
   margin-top: 40px;
   color: #707071;
 }
+
+/* login */
+
+.login-section {
+  width: 100%;
+  justify-content: center;
+  height: 200px;
+}
+
+.login {
+  width: 1000px;
+  top: -200px;
+  background-color: white;
+  height: 500px;
+  padding-top: 50px;
+  padding-left: 150px;
+  padding-right: 150px;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.login > h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.login > h2 {
+  font-size: 15px;
+  font-weight: normal;
+  margin-bottom: 80px;
+}
+
+.login > label,
+.login > input {
+  display: inline-block;
+  width: 180px;
+  font-size: 20px;
+  color: #707070;
+}
+
+.login > input {
+  display: inline-block;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 0.5px;
+  border-color: #707071;
+  margin-bottom: 15px;
+  padding: 12px;
+  box-sizing: border-box;
+}
+.login > input {
+  width: 400px;
+  height: 45px;
+}
+.login > div {
+  justify-content: center;
+}
+.login > div > button {
+  width: 200px;
+  height: 60px;
+  border-radius: 20px;
+  background-color: #006ab7;
+  border-style: none;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}

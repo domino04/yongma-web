@@ -1,0 +1,33 @@
+{% extends 'base.html' %} {% block css %} {% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'sidenav.css' %}" />
+{% endblock%} {% block sectionsCss %}
+<!-- 자식 템플릿 상속 -->
+{% endblock %} {% block container %}
+<div id="side-nav col">
+  <div class="top-picture"></div>
+  <div class="page-container-div">
+    <div class="page-container row">
+      <div class="login-section relative row">
+        <div class="login absolute">
+          <h1>로그인</h1>
+          <h2>해당 페이지는 로그인이 필요한 페이지입니다.</h2>
+          <label for="id">아이디</label>
+          <input type="text" name="id" id="login-id" /><br />
+          <label for="password">패스워드</label>
+          <input type="password" name="password" id="login-pw" />
+          <br /><br />
+          <div class="row">
+            <button onclick="javascript:btn()">로그인 하기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function btn() {
+    alert("알맞지 않은 아이디 혹은 비밀번호입니다.");
+  }
+</script>
+{% endblock %}
