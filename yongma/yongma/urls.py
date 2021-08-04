@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from app import views
+from django.http import HttpResponse
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,5 +26,6 @@ urlpatterns = [
     path("<str:category>/<str:section>/<int:post_pk>",
          views.post_view, name="section"),
     path("login/", views.login, name="login"),
-    path('ckeditor/', include('ckeditor_uploader.urls'))
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    path("robots.txt/", lambda x: HttpResponse("User-Agent: *\nAllow: /",
+        content_type="text/plain")),
+    ]
