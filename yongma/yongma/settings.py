@@ -46,6 +46,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'app',
+    # 'django.contrib.sites',
+    # 'django.contrib.sitemaps',
 ]
 
 MIDDLEWARE = [
@@ -137,3 +139,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # 텍스트 에디터 path 설정
 CKEDITOR_UPLOAD_PATH = 'uplaods/'
 CKEDITOR_IMAGE_BACKEND = 'pillow'
+
+
+# # sitemap
+# SITE_ID = 1
