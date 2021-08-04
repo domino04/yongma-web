@@ -25,4 +25,5 @@ urlpatterns = [
     path("<str:category>/<str:section>/<int:post_pk>",
          views.post_view, name="section"),
     path("login/", views.login, name="login"),
-]
+    path('ckeditor/', include('ckeditor_uploader.urls'))
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

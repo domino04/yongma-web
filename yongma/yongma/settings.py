@@ -26,9 +26,9 @@ SECRET_KEY = 'django-insecure-+p+^v-osm+a-x)abrcfmr*p$o9qvsr@o^sz=86_l1_m07dhpu*
 DEBUG = True
 
 ALLOWED_HOSTS = [
-        '3.91.192.238',
-        'yongmaholdings.co.kr',
-        '.amazonaws.com',
+    '3.91.192.238',
+    'yongmaholdings.co.kr',
+    '.amazonaws.com',
     'localhost'
 ]
 
@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'app',
+    'ckeditor',
+    'ckeditor_uploader'
 ]
 
 MIDDLEWARE = [
@@ -129,3 +131,8 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# 텍스트 에디터 path 설정
+CKEDITOR_UPLOAD_PATH = 'uplaods/'
+CKEDITOR_IMAGE_BACKEND = 'pillow'
