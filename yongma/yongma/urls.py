@@ -27,5 +27,5 @@ urlpatterns = [
          views.post_view, name="section"),
     path("login/", views.login, name="login"),
     path("robots.txt/", lambda x: HttpResponse("User-Agent: *\nAllow: /",
-        content_type="text/plain")),
-    ]
+                                               content_type="text/plain")),
+]
