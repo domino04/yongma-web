@@ -32,7 +32,10 @@
   </thead>
   <tbody>
     <tr>
-      <td class="title">{{post.content}}</a></td>
+      <td class="date">작성일 : {{post.created_at|date:"Y-m-d"}}</a></td>
+    </tr>
+    <tr>
+      <td style="white-space: pre-wrap;" class="title">{{post.content}}</a></td>
     </tr>
   </tbody>
 </table>

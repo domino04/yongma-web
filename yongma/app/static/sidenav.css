@@ -515,6 +515,11 @@ tr > .created-at {
   padding-top: 40px;
   padding-bottom: 60px;
 }
+.news-post-table > tbody > tr > .date {
+  text-align: right;
+  height: 30px;
+  padding-top: 30px;
+}
 .news-post-btn {
   margin-top: 40px;
   width: 100%;

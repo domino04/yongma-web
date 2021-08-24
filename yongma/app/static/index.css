@@ -49,7 +49,7 @@
 
 .posts-box {
   width: 48%;
-  height: 250px;
+  height: 280px;
 }
 
 .posts-box-top {
@@ -97,6 +97,9 @@
 }
 .posts-box-bottom > tbody {
   width: 100%;
+}
+.a-post:last-child {
+  border-color: white;
 }
 .a-post {
   width: 100%;

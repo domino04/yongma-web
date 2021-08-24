@@ -40,7 +40,7 @@
       <td class="number">{{press.id}}</td>
       <td class="title"><a href="{{press.link}}">{{press.title}}</a></td>
       <td class="title">{{press.company}}</td>
-      <td class="created-at">{{press.created_at.date}}</td>
+      <td class="created-at">{{press.created_at.date|date:"Y-m-d"}}</td>
     </tr>
     {% endfor %}
   </tbody>
