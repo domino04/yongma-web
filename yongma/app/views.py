@@ -5,8 +5,8 @@ from .models import New, Press, Contact, Portfolio
 
 
 def index(request):
-    news = New.objects.all()
-    presss = Press.objects.all()
+    news = reversed(New.objects.all())
+    presss = reversed(Press.objects.all().reverse())
     Portfolios = Portfolio.objects.all()
 
     return render(request, 'index.html', {'news': news, 'presss': presss, 'portfolios': Portfolios})
@@ -18,12 +18,12 @@ def section(request, category, section):
 
     # 뉴스룸
     if (category == 'community') and (section == 'newsRoom'):
-        news = New.objects.all()
+        news = reversed(New.objects.all())
         data = {'news': news}
 
     # 프레스
     if (category == 'community') and (section == 'press'):
-        presss = Press.objects.all()
+        presss = reversed(Press.objects.all())
         data = {'presss': presss}
 
     if (category == 'community') and (section == 'contact'):

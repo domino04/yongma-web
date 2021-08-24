@@ -178,6 +178,9 @@
 }
 
 @media screen and (max-width: 1000px) {
+  html {
+    width: 100%;
+  }
   #index-page {
     width: 100%;
   }
